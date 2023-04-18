@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+#navbar {
+    /* *********navigation bar*/
+    backdrop-filter: blur(15px);
+    /*adding a blur behind the navigation bar*/
+
+    box-shadow: 1px 1px 10px #000;
+    /*adding box shadow at the bottom (1px shows the offset to left and bottom, and 10px shows the blurryness of the shadow and #000 is the color of the shadow which is black  */
+
+    position: absolute;
+    /* positioning the nav bar absolute so it can be positioned above the background picture */
+    width: 100%;
+    /*changing the position will shrink the size of the nav, so making it 100% to make it full screen */
+
+}
+
+.menu-list {
+    /* */
+    height: 80px;
+    /* the height of the nav bar */
+    width: 100%;
+    /* width of the nav bar */
+    display: flex;
+    /* flexing the three ul containers that are inside the nav bar*/
+    justify-content: space-between;
+    /* horizontally creating space between the flexed containers*/
+    align-items: center;
+    /* vertically centering the flexed containers*/
+    padding: 0 30px;
+    /*creating a 30 pixel space on the left and right of the flexed containers */
+}
+
+.menu-list ul {
+    list-style: none;
+    /* eliminating the bullet points of the ul values */
+
+}
+
+.menu-list-left,
+.menu-list-center,
+.menu-list-right {
+    /*saving lots of lines of code by calling all three containers at once, since they are going to share the same value */
+    display: flex;
+    /* */
+    margin: 0;
+    /*eliminating the defult margin */
+    width: 33.3%;
+    /* giving 3 of the container the same width of 33.3 (100%/3) */
+
+}
+
+.menu-list-left {
+    justify-content: left;
+    padding: 0;
+}
+
+.menu-list-center {
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.menu-list-center img {
+    border-radius: 0 0 20px 20px;
+    height: 100px;
+
+}
+
+.menu-list-right {
+    justify-content: right;
+}
+
+.menu-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 100;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+
+#showcase {
+    background-image: url(./images/hero-lg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+}
+
+.disc {
+    width: 400px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.222);
+    box-shadow: 0.5px 0.5px 100px rgb(110, 54, 27);
+    position: fixed;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    border-radius: 10px;
+}
