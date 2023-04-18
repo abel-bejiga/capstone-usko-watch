@@ -97,8 +97,8 @@ body {
 }
 
 .disc {
-    width: 400px;
-    height: 450px;
+    width: 450px;
+    height: 350px;
     background: rgba(255, 255, 255, 0.222);
     box-shadow: 0.5px 0.5px 100px rgb(110, 54, 27);
     position: fixed;
@@ -106,4 +106,46 @@ body {
     left: 20%;
     transform: translate(-20%, -50%);
     border-radius: 10px;
+}
+
+.disc img {
+    height: 50px;
+    display: flex;
+    margin: auto;
+}
+
+.disc .intro {
+    width: 90%;
+    height: 70%;
+    text-indent: 15px;
+    display: grid;
+    margin: auto;
+    font-family: cursive;
+}
+
+
+.wrapper {
+    background-image: url(../images/reg-img/reg-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.form {
+    width: 450px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 21px #d4d4d4;
+    padding: 40px;
+    border-radius: 8px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(-10%, -50%);
+}
+
+#contener {
+    position: relative;
+    margin-bottom: 25px;
+    justify-content: flex-end;
 }
