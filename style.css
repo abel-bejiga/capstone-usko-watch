@@ -104,6 +104,19 @@ i:hover {
     color: gold;
 }
 
+/* #bar {
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+} */
+
+
+/* mobile Nav */
+
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
 
 #showcase {
     background-image: url(./images/hero-lg.jpg);
@@ -111,9 +124,9 @@ i:hover {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-
-
 }
+
+
 
 .disc {
     width: 450px;
