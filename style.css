@@ -113,10 +113,10 @@ i:hover {
 
 /* mobile Nav */
 
-.navbar-light .navbar-toggler {
+/* .navbar-light .navbar-toggler {
     border: none;
     outline: none;
-}
+} */
 
 #showcase {
     background-image: url(./images/hero-lg.jpg);
@@ -155,6 +155,7 @@ i:hover {
     font-family: cursive;
 }
 
+/* ---------Registration page------------- */
 
 .wrapper {
     background-image: url(../images/reg-img/reg-hero.jpg);
@@ -174,6 +175,7 @@ i:hover {
     right: 10%;
     top: 50%;
     transform: translate(-10%, -50%);
+
 }
 
 #contener {
@@ -187,6 +189,7 @@ i:hover {
     background-color: rgba(12, 33, 18, 0.824);
 
 }
+
 
 #card {
     display: flex;
@@ -280,3 +283,142 @@ i:hover {
         transform: rotate(360deg);
     }
 } */
+/* ------checkout page------- */
+#checkout {
+    background-image: url(/images/gallery/cart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#cart-container,
+#cart-bottom {
+    background-color: rgba(235, 229, 225, 0.794);
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+}
+
+#check-out {
+    position: absolute;
+    Top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#check-out h2 {
+
+    text-align: center;
+    color: #ffffffb7;
+    margin: 0 2px 0 0;
+    padding-top: 55px;
+
+}
+
+.cart p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    position: absolute;
+    top: 7px;
+    right: 32px;
+}
+
+#cart-container table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cart-container table thead {
+    font-weight: 745;
+
+}
+
+#cart-container table thead td {
+    /* background: #fff; */
+    border: none;
+    padding: 6px 0;
+    color: #000;
+}
+
+.ctime img {
+    width: 200px;
+
+}
+
+#cart-container table td {
+    border: 1px;
+    text-align: center;
+
+}
+
+#cart-container tr {
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#cart-container {
+    border: 1px solid gray;
+    padding: 12px;
+}
+
+
+#Quantity {
+    background-color: rgba(6, 91, 194, 0.824);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.ctotal {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Quantity:hover {
+    color: gold;
+}
+
+#cart-bottom .coupon>div {
+    border: 1px solid gray;
+    margin: 12px;
+
+}
+
+#cart-bottom .coupon h5 {
+    margin: 15px;
+}
+
+#cart-bottom .coupon input {
+    padding: 0 12px;
+    height: 32px;
+    margin: 0 0 20px 12px;
+}
+
+#cart-bottom .total>div {
+    border: 1px solid gray;
+}
+
+#cart-bottom .total h5,
+h6,
+button {
+    margin: 15px;
+
+}
+
+#cart-bottom .total div>div {
+    padding: 0 12px;
+}
+
+#cart-bottom .coupon,
+.total,
+p {
+    color: #000000fb;
+}
