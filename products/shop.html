@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body id="shop">
@@ -25,6 +27,9 @@
             <div class="menu-list">
                 <ul class="menu-list-left">
                     <li><a href="/index.html">Home</a></li>
+                    <li><a href="../index.html"><i class="fa-solid fa-house"></i></a> </li>
+
+
                 </ul>
                 <ul class="menu-list-center">
                     <li><img src="/images/hero-logo.png" alt=""></li>
@@ -33,16 +38,34 @@
                     <li><a href="/registration/registration.html">Registration</a></li>
                     <li><a href="/login/login.html">Login</a></li>
                     <!-- <li><a href="/products/shop.html">Shop</a></li> -->
-                    <li><a href="/checkout/checkout.html">Checkout</a></li>
+                    <li class="cart-chkout"><a href="/checkout/checkout.html">Checkout</a></li>
+                    <div class="cart hide">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="items-in-cart"></p>
+                    </div>
+                    <li class="burger-menu "><i class="fa-solid fa-bars"></i></li>
+                    <li class="burger-menu hide" id="close"><i class="fa-solid fa-xmark"></i></li>  
+                    
                 </ul>
+
+            </div>
+            <!-- burger menu -->
+            <div class="menu-reviel hide">
+                <ul class="burger-list">
+                    <li><a href="/registration/registration.html">Registration</a></li>
+                    <li><a href="/login/login.html">Login</a></li>
+                    <!-- <li><a href="/products/shop.html">Shop</a></li> -->
+                    <li><a href="/checkout/checkout.html">Checkout</a></li>
             </div>
         </nav>
     </main>
-
+<div class="card-wrapper">
     <section id="card">
 
 
         <div class="card">
+            <div class="added-bg added-bg-img">
+                <div class="added-wrapper"></div>
             <div class="card-body">
                 <img src="/images/gallery/goldentimeW.jpg" class="card-img-top" alt="Hand watch">
                 <div class="card-disc">
@@ -54,8 +77,11 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="card">
-            <div class="card-body h-25">
+            <div class="added-bg added-bg-img">
+            <div class="added-wrapper"></div>
+            <div class="card-body">
                 <img src="/images/gallery/catfaceW.jpg" class="card-img-top" alt="Hand watch">
                 <div class="card-disc">
                     <h5 class="card-title">Cat Face</h5>
@@ -67,9 +93,10 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="card">
-            <!-- <div class="added-bg"> -->
-            <!-- <div class="added-wrapper"></div> -->
+            <div class="added-bg added-bg-img">
+            <div class="added-wrapper"></div>
             <div class="card-body ">
                 <img src="/images/gallery/fairtalyW.jpg" class="card-img-top" alt="Hand watch">
                 <div class="card-disc">
@@ -86,6 +113,8 @@
         </div>
 
         <div class="card">
+            <div class="added-bg added-bg-img">
+            <div class="added-wrapper"></div>
             <div class="card-body">
                 <img src="/images/gallery/ctime.jpg" class="card-img-top" alt="Hand watch">
                 <div class="card-disc">
@@ -98,7 +127,10 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="card">
+            <div class="added-bg added-bg-img">
+            <div class="added-wrapper"></div>
             <div class="card-body">
                 <img src="/images/gallery/bluefaceM.png" class="card-img-top" alt="Hand watch">
                 <div class="card-disc">
@@ -111,7 +143,10 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="card">
+            <div class="added-bg added-bg-img">
+            <div class="added-wrapper"></div>
             <div class="card-body">
                 <img src="/images/gallery/silvertimeM.png" class="card-img-top" alt="Hand watch">
                 <div class="card-disc">
@@ -125,7 +160,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
         <div class="card">
+            <div class="added-bg added-bg-img">
+            <div class="added-wrapper"></div>
             <div class="card-body">
                 <img src="/images/gallery/oceanblueM.png" class="card-img-top" alt="Hand watch">
                 <div class="card-disc">
@@ -139,7 +178,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
         <div class="card">
+            <div class="added-bg added-bg-img">
+            <div class="added-wrapper"></div>
             <div class="card-body">
                 <img src="/images/gallery/manwatch.png" class="card-img-top " alt="Hand watch">
                 <div class="card-disc">
@@ -152,10 +195,15 @@
                 </div>
             </div>
         </div>
-
-
+    </div>
         </div>
     </section>
+</div>
+
+
+<!-- script -->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="../index.js"></script>
 </body>
 
 </html>

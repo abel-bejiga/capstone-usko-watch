@@ -14,6 +14,10 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/fc09ef96ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body id="checkout">
@@ -23,6 +27,8 @@
         <div class="menu-list">
             <ul class="menu-list-left">
                 <li><a href="/index.html">Home</a></li>
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i></a> </li>
+
             </ul>
             <ul class="menu-list-center">
                 <li><img src="/images/hero-logo.png" alt=""></li>
@@ -31,13 +37,24 @@
                 <li><a href="/registration/registration.html">Registration</a></li>
                 <li><a href="/login/login.html">Login</a></li>
                 <li><a href="/products/shop.html">Shop</a></li>
-                <div class="cart">
+                <div class="cart ">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <p>3</p>
+                    <p class="items-in-cart"></p>
                 </div>
-                <!-- <li><a href="/checkout/checkout.html">Cart</a></li> -->
+                <li class="burger-menu" id="open"><i class="fa-solid fa-bars"></i></li>  
+                <li class="burger-menu hide" id="close"><i class="fa-solid fa-xmark"></i></li>  
             </ul>
+
         </div>
+            <!-- burger menu -->
+            <div class="menu-reviel hide">
+                <ul class="burger-list">
+                    <li><a href="/registration/registration.html">Registration</a></li>
+                    <li><a href="/login/login.html">Login</a></li>
+                    <li><a href="/products/shop.html">Shop</a></li>
+
+                </ul>
+            </div>
     </nav>
 
     <main id="check-out">
@@ -59,59 +76,80 @@
                 </thead>
 
                 <tbody>
-                    <tr>
+                    <tr id="ctime-checkout">
                         <td class="ctime"><img src="/images/gallery/ctime.jpg" alt="silver hand watch"></td>
                         <td>
                             <h5>Silver Time</h5>
                         </td>
-                        <td><select name="Quantity" id="Quantity">
-                                <option value="">Qty: 1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select></td>
                         <td>
-                            <h5>$249.99</h5>
+                            <!-- <select name="Quantity" id="Quantity">
+                                <option id="top1" label="Qty" value="1">1</option>
+                                <option id="top2" value="2">2</option>
+                                <option id="top3" value="3">3</option>
+                            </select></td> -->
+                            <div class="optionBtn">
+                                <button type="button" class="optionMinus"><i class="fa-solid fa-minus"></i></button>
+                                <p class="cart-val">1</p>
+                                <button type="button" class="optionPlus"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        <td>
+                            <h5 class="value-num">$<span>249.99</span> </h5>
                         </td>
-                        <td><a href="#"><i class="fas fa-trash-alt"></i> </a></td>
+                        <td><a href="#" class="trash"><i class="fas fa-trash-alt"></i> </a></td>
                         <td>
-                            <h5>260.99</h5>
+                            <h5 class="tax-total">$<span>264.98</span></h5>
                         </td>
 
                     </tr>
-                    <tr>
+                    <tr id="goldentime-checkout">
                         <td class="ctime"><img src="/images/gallery/goldentimeW.jpg" alt="silver hand watch"></td>
                         <td>
                             <h5>Golden Time</h5>
                         </td>
-                        <td><select name="Quantity" id="Quantity">
-                                <option value="">Qty: 1</option>
+                        <td>
+                            <!-- <select name="Quantity" id="Quantity">
+                            
+                                <option label="Qty" value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                            </select></td>
-                        <td>
-                            <h5>$199.99</h5>
+                            </select> -->
+                            <div class="optionBtn2">
+                                <button type="button" class="optionMinus"><i class="fa-solid fa-minus"></i></button>
+                                <p class="cart-val">1</p>
+                                <button type="button" class="optionPlus"><i class="fa-solid fa-plus"></i></button>
+                            </div>
                         </td>
-                        <td><a href="#"><i class="fas fa-trash-alt"></i> </a></td>
                         <td>
-                            <h5>215.99</h5>
+                            <h5 class="value-num2">$<span>199.99</span></h5>
+                        </td>
+                        <td><a href="#" class="trash2"><i class="fas fa-trash-alt"></i> </a></td>
+                        <td>
+                            <h5 class="tax-total">$<span>215.99</span></h5>
                         </td>
                     </tr>
-                    <tr>
+                    <tr id="manwatch-checkout">
                         <td class="ctime"><img src="/images/gallery/manwatch.png" alt="silver hand watch"></td>
                         <td>
                             <h5>Royal Silver</h5>
                         </td>
-                        <td><select name="Quantity" id="Quantity">
+                        <td>
+                            <!-- <select name="Quantity" id="Quantity">
                                 <option value="">Qty: 1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
-                            </select></td>
-                        <td>
-                            <h5>$299.99</h5>
+                            </select> -->
+                            <div class="optionBtn3">
+                                <button type="button" class="optionMinus"><i class="fa-solid fa-minus"></i></button>
+                                <p class="cart-val">1</p>
+                                <button type="button" class="optionPlus"><i class="fa-solid fa-plus"></i></button>
+                            </div>
                         </td>
-                        <td><a href="#"><i class="fas fa-trash-alt"></i> </a></td>
                         <td>
-                            <h5>324.99</h5>
+                            <h5 class="value-num3">$<span>299.99</span></h5>
+                        </td>
+                        <td><a href="#" class="trash3"><i class="fas fa-trash-alt"></i> </a></td>
+                        <td>
+                            <h5 class="tax-total">$<span>324.99</span></h5>
                         </td>
                     </tr>
                     <!-- <tr>
@@ -153,16 +191,16 @@
                         <hr>
                         <div class="ctotal">
                             <h6>Subtotal</h6>
-                            <p>$801.91</p>
+                            <p>$<span>801.91</span> </p>
                         </div>
                         <div class="ctotal">
                             <h6>Shipping</h6>
-                            <p>$30.99</p>
+                            <p>$<span>30.99</span></p>
                         </div>
                         <hr>
                         <div class="ctotal">
                             <h6>Total</h6>
-                            <p>$832.96</p>
+                            <p>$<span>832.96</span> </p>
                         </div>
                         <button type="Pay" class="btn btn-primary pay">Pay</button>
                     </div>
@@ -170,6 +208,10 @@
             </div>
         </section>
     </main>
+
+        <!-- script -->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="../index.js"></script>
 </body>
 
 </html>
